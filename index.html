@@ -10,6 +10,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Fast HTTP2 free websites cdn hosting. Serverless it the next trend in cloud computing.">
         <meta name="author" content="">
+        <script>
+          if (window.location.protocol != "https:") {
+                window.location = window.location.toString().replace(/^http:/, "https:");
+          }
+        </script>
 
         <!-- CSS -->
         <link rel='stylesheet' href='assets/css/font-google-pt-sans.css'>
