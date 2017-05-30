@@ -72,7 +72,7 @@ window.addEventListener('load', function (e) {
 <script>
 
 var beforeLoad = 0;
-var loadTimes = beforeLoad;
+var loadTimes = 0;
 var ctr = 0;
 function imageLoadHttp() {
    if (beforeLoad != 0) {
@@ -84,13 +84,14 @@ function imageLoadHttp() {
 
 var intervalFct;
 var processFunc = function() {
-    $("#completeLoad").html("Loading time : " + ((loadTimes-beforeLoad)/1000.0).toFixed(3) + " seconds");
-    if (ctr >= 281) {
+    if (beforeLoad != 0) {
+      $("#completeLoad").html("Loading time : " + ((loadTimes-beforeLoad)/1000.0).toFixed(3) + " seconds");
+      if (ctr >= 281) {
         clearInterval(intervalFct);
+      }
     }
 }
 
-intervalFct = setInterval(processFunc, 10);
 </script>
 
 </head>
@@ -438,8 +439,10 @@ function makeid()
 
 tmp = tmp + "_" +makeid();
 beforeLoad = new Date().getTime();
-$('img').each(function (image) {
-    image.src = image._src + "?unique=" + tmp;
+loadTimes = beforeLoad;
+intervalFct = setInterval(processFunc, 10);
+$("img").each(function (image, i) {    
+    $(i).attr('src',$(i).attr('_src') + "?unique=" + tmp);
 });
 
 </script>
