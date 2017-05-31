@@ -51,6 +51,14 @@ body {
     height: auto;
 }
 
+.centered {
+    height: 30px;
+    width:100%;
+    margin:auto;
+    text-align: center;
+}
+
+
 </style>
 <script src="/assets/js/jquery-1.8.2.min.js"></script>
 
@@ -97,7 +105,7 @@ var processFunc = function() {
 </head>
 
 <body>
-<div id="completeLoad">Loading time : 0.000 seconds</div>
+<div class="centered" id="completeLoad">Loading time : 0.000 seconds</div>
   <div class="row">
     <img onload="imageLoadHttp()" src="slices/blank.png" _src="slices/slice_0_0.gif" >
     <img onload="imageLoadHttp()" src="slices/blank.png" _src="slices/slice_0_1.gif" >

@@ -10,11 +10,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Fast HTTP2 free websites cdn hosting. Serverless it the next trend in cloud computing.">
         <meta name="author" content="">
-        <script>
+        <!--script>
           if (window.location.protocol != "https:") {
                 window.location = window.location.toString().replace(/^http:/, "https:");
           }
-        </script>
+        </script-->
 
         <!-- CSS -->
         <link rel='stylesheet' href='assets/css/font-google-pt-sans.css'>
@@ -34,6 +34,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <script src="assets/js/jquery-1.8.2.min.js"></script>
 
     </head>
 
@@ -83,6 +84,69 @@
                 </div>
             </div>
         </div>
+        <!-- Content -->
+        <div class="container">
+
+            <div class="row">
+                	<div class="span12" style="text-align:center;margin:auto;">
+				<br/>
+				<h1>Feel the Website Difference.</h1>
+				<br/>
+			</div>
+<script>
+   function frameLoaded() {
+     $("#http2").attr('src', $("#http2").attr('_src'));
+     
+   }
+   function frameCompleted() {
+   }
+</script>
+<style>
+.iframeh {
+
+  overflow-y: hidden;
+}
+</style>
+
+
+                	<div class="span1">
+				&nbsp;
+			</div>
+
+                	<div class="span4" style="padding-left:5%">
+					HTTP 1.1
+					<br/>
+			</div>
+                	<div class="span2">
+			</div>
+                	<div class="span4">
+					HTTP 2.0
+					<br/>
+			</div>
+                	<div class="span1">
+			</div>
+                	<div class="span4">
+			&nbsp;
+			</div>
+                	<div class="span2">
+			</div>
+                	<div class="span4">
+			&nbsp;
+			</div>
+
+                	<div class="span1">
+			</div>
+                	<div class="span4" style="padding-left:5%">
+			<iframe id="http1" src="https://acentera.github.io/test/iframe_content.html?http1" onload="frameLoaded()" scrolling="no" class="iframeh" width="400px" height="300px" frameBorder="0"></iframe>
+			</div>
+                	<div class="span2">
+			</div>
+                	<div class="span4">
+			<iframe id="http2" src="" _src="https://www.serverlesscdn.com/test/iframe_content.html?http2" onload="frameCompleted()" class="iframeh" scrolling="no" width="400" height="300px" frameBorder="0"></iframe>
+			</div>
+
+	    </div>
+	</div>
 
         <!-- Content -->
         <div class="container">
@@ -167,7 +231,6 @@
 
 
         <!-- Javascript -->
-        <script src="assets/js/jquery-1.8.2.min.js"></script>
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/jquery.tweet.js"></script>
         <script src="assets/js/jflickrfeed.js"></script>
