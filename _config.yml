@@ -1,0 +1,24 @@
+name: Serverless CDN - HTTP2 Websites
+markdown: redcarpet
+highlighter: pygments
+exclude: ["LICENSE.txt", "README.md"]
+
+baseurl: ""
+permalink: /:title/
+
+
+# Paginate
+paginate: 1
+paginate_path: "/pagination/page:num/"
+
+
+# Plugins
+gems:
+  - jekyll-multiple-languages-plugin
+  - jekyll-paginate
+
+
+# jekyll-multiple-languages-plugin settings:
+languages: ["en", "fr"]
+
+exclude_from_localizations: ["javascript", "assets", "images", "css", "scripts", "favicon.ico"]
