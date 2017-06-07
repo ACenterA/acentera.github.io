@@ -11,4 +11,6 @@ pages:
   includeexample: The following text is a Jekyll include liquid tag parameter
 titles:
   pagination: Pagination
-  Home: Fast HTTP2 free websites cdn hosting. Serverless it the next trend in cloud computing.
+  Home: Serverless CDN - HTTP2 websites
+  Homedesc: Fast HTTP2 free websites cdn hosting. Serverless it the next trend in cloud computing.
+  create: Create free website - Serverless CDN - HTTP2 websites

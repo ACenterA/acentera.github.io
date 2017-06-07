@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>{% if page.titlei18n %}{% t page.titlei18n %}{% else %}{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %} {% if page.desci18n %}{% t page.desci18n %}{% else %}{{ site.description }}{% endif %}{% endif %}">
 
     <meta name="author" content="">
 

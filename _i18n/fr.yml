@@ -10,5 +10,7 @@ pages:
   example: example
   includeexample: test include exmpale
 titles:
-  pagination: AAFRPagination  
-  Home: Hébergement HTTP2, CDN rapide et gratuit. L'hébergement serverless est le prochain mouvement infonuagique.
+  pagination: AAFRPagination
+  Home: Serverless CDN - Site web HTTP2
+  Homedesc: Hébergement HTTP2, CDN rapide et gratuit. L'hébergement serverless est le prochain mouvement infonuagique.
+  create: Créez votre site web - Serverless CDN - Site web HTTP2
